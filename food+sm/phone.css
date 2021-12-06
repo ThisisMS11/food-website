@@ -1,0 +1,74 @@
+
+
+/* manipulating the navigation bar here */
+#navbar{
+
+}
+
+/* manipulating the sectionwala part */
+.sectionclass{
+    height: 750px;
+    
+}
+
+/* services section */
+
+.sectionclass{
+    height: 612px;
+}
+.servicescontainer{
+
+
+}
+
+
+
+#services{
+    flex-direction: column;
+    height:1580px;
+}
+
+.box{
+    border: solid 3px rgb(255, 255, 255);
+    margin-bottom: 50px;
+    height: auto;
+    width: auto;
+}
+
+/* clientsection */
+#clientsection{
+    display: flex;
+    height: 1332px;
+
+}
+.sec{
+    justify-content: flex-end;
+}
+
+#clients{
+    
+}
+
+.firsttwo {
+    width: 18.5vw;
+    height: 15.5vh;
+}
+
+.twotwo {
+    width: 16.5vw;
+    height: 12.5vh;
+}
+#clientsection::before{
+    height: 103.8%;
+}
+
+
+
+/* contact us  */
+
+#contactus::before{
+    height: 48%;
+}
+#contactus{
+
+}

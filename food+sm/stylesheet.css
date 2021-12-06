@@ -1,0 +1,334 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+/* logo thing */
+#logo img{
+
+    width: 75px;
+    height: 75px;
+    padding: 0px 30px;
+    border-radius: 2px;
+    filter: invert(16%);
+
+}
+
+/* the navigation bar */
+#navbar{
+    display: flex;
+    position: relative;
+    
+    align-items: center;
+}
+
+/* the list in the navigation bar */
+#navbar ul{
+    display: flex;
+    padding: 0px 10px;
+}
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+
+
+
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+
+
+#navbar ul li a{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: 200;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 135px;
+    padding: 10px 12px;
+}
+#navbar ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border-radius: 20px;
+    
+}
+
+.sectionclass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 620px;
+    padding: 0px 2px;
+    
+}
+
+.sectionclass::before{
+    content: '';
+    position: absolute;
+    /* section ki parent class kya  hai body so it will move relative to our body tag. */
+    background:url('../bg1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 55%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.89;
+    z-index: -1;
+}
+
+/* utility classes */
+
+
+.primary{
+    font-size: 3rem;
+    padding: 20px 2px;
+    color: rgb(0, 0, 0);
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+.sectionclass p{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.btn{
+    padding: 0px 28px;
+    margin: 10px 0px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 30px;
+    font-family: 'Baloo Bhai 2', cursive;
+    border-radius: 19px;
+    transition:all 0.5s ease-in-out 0.1s;
+}
+
+
+
+/* add hovering effects to the button */
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgb(58, 52, 52);
+    
+}
+
+
+
+
+
+
+
+/* starting the services part from here  on. */
+
+.servicescontainer{
+    /* border: solid 5px red; */
+    /* margin-top: 250px; */
+    height: 666px;
+}
+
+.headingser{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+#services{
+    display: flex;
+    
+    /* border: solid 2px black; */
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 600px;
+}
+
+/* designing the box inside the services class */
+.box{
+    width: 370px;
+    height: 500px;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    border-radius: 60px;
+    font-size: 23px;
+    font-family: 'Baloo Bhai 2', cursive;
+    transition: all 0.55s ease-in-out 0.01s;
+    background-color: black;
+    color: white;
+    
+
+}
+
+.box:hover{
+    transform: scale(1.08);
+    box-shadow: 2.3px 2.3px 3.5px 1.5px rgb(255, 255, 255);
+    
+    
+    
+}
+
+.serimg{
+    border-radius: 135px;
+    padding: 4px;
+    width: 240px;
+    height: 230px;
+}
+
+
+/* starting the clients part from hereon thanx mohit you didn't give up */
+
+#clientsection{
+    
+    /* border: solid 3px red; */
+    height: 380px;
+    
+}
+
+#clientsection h1{
+    text-align: center;
+    font-size: 35px;
+    font-family:  'Baloo Bhai 2', cursive;
+}
+
+.sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#clients{
+    height: 275px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: solid 2px black; */
+
+    
+}
+
+.twotwo{
+    width:200px;
+    height: 200px;
+}
+.firsttwo{
+    width: 200px;
+    height: 200px;
+}
+
+
+#clientsection::before{
+    content:'';
+    background:url('2.0.jpg');
+    position:absolute;
+    width: 100%;
+    height: 29%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+
+
+/* css for the contactus section */
+#contactus{
+    /* border: solid 2px red; */
+    height: 410px;
+
+
+
+
+}
+#contactus h1{
+    text-align: center;
+    font-size: 35px;
+    font-family:  'Baloo Bhai 2', cursive;
+}
+
+#contactus::before{
+    content: '';
+    position:absolute;
+    background:url('contactus.jpg') no-repeat center center;
+    width:100%;
+    height:46%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+
+.contactbox{
+    /* border: solid 2px seagreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:21px;
+}
+.contactbox input,.contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+
+}
+
+.contactbox form{
+    width: 43%;
+    /* border: solid 2px yellowgreen; */
+
+}
+.contactbox label{
+    font-size: 1.3rem;
+}
+
+
+/* to give padding between the input boxes */
+.form-group{
+    padding: 4px;
+    
+}
+
+
+/* targeting the submit button using  the input  selector. */
+input[type='submit']{
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+
+footer{
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 3px;
+}
+
+
+
+
+
+
+
+
